@@ -1,3 +1,4 @@
+lib/.precomp/*
 !Build/
 .last_cover_stats
 /META.yml
