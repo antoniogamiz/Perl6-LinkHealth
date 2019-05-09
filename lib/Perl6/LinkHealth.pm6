@@ -1,6 +1,6 @@
 use v6;
 
-unit module LinkHealth;
+unit module Perl6::LinkHealth;
 
 sub list-directory($dir = '.') is export {
     my @todo = $dir.IO.dir;
