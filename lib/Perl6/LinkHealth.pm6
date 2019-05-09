@@ -8,3 +8,5 @@ sub list-directory($dir = '.') is export {
     grep { !.IO.d }, @todo.List.flat;
     @todo.map({.Str});
 }
+
+say list-directory("assets/testing-dirs").join: " ";
