@@ -23,13 +23,49 @@ save-to-file($links);
 
 #### sub list-directory
 
-#### sub save-to-file
+```
+sub list-directory (
+    Str $dir
+) returns Array
+```
+
+Read all files in \$dir recursively.
+
+#### sub compare
+
+```
+sub compare (
+    Array @previous,
+    Array @current
+) returns (Array, Array)
+```
+
+Compare all links in @current with @previous. Returns the missing ones in the first element of the list and the new ones in the second.
 
 #### sub read-from-file
 
+```
+sub read-from-file(
+    Str $path
+) returns Seq
+```
+
+Read a Seq of links from a file.
+
+#### sub save-to-file
+
+```
+sub save-to-file(
+    Str $path,
+    Str $data
+) returns Mu
+```
+
+Save in $path the content of $data.
+
 # AUTHOR
 
-Antonio Gámiz <mailto:antoniogamiz10@gmail.com>
+Antonio Gámiz <antoniogamiz10@gmail.com>
 
 # COPYRIGHT AND LICENSE
 
