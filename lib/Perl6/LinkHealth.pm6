@@ -14,11 +14,26 @@ sub list-directory($dir = '.') is export {
     @files;
 }
 
-sub read-from-file($path = "./links.txt") is export {
-    my $content = slurp $path;
-    $content;
+sub compare(@previous, @current) is export {
+    my %hash = Hash.new( @previous X False );
+    my @missing;
+    my @new;
+    for @current -> $link {
+        if %hash{$link}:!exists {
+            @missing.append($link);
+        } else {
+            %hash{$link} = True;
+        }
+    }
+    for %hash.keys {@new.append($_) if !%hash{$_}};
+    (@missing, @new);
 }
 
-sub save-to-file($data = "", $dir = ".") is export {
-    spurt $dir ~ "/links.txt", $data;
+sub read-from-file($path) is export {
+    my $content = slurp $path;
+    $content.split("\n");
+}
+
+sub save-to-file($path, $data) is export {
+    spurt $path, $data;
 }
