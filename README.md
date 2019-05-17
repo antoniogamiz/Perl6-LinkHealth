@@ -23,7 +23,7 @@ save-to-file($links);
 
 #### sub list-directory
 
-```
+```perl6
 sub list-directory (
     Str $dir
 ) returns Array
@@ -33,7 +33,7 @@ Read all files in \$dir recursively.
 
 #### sub compare
 
-```
+```perl6
 sub compare (
     Array @previous,
     Array @current
@@ -44,7 +44,7 @@ Compare all links in @current with @previous. Returns the missing ones in the fi
 
 #### sub read-from-file
 
-```
+```perl6
 sub read-from-file(
     Str $path
 ) returns Seq
@@ -54,7 +54,7 @@ Read a Seq of links from a file.
 
 #### sub save-to-file
 
-```
+```perl6
 sub save-to-file(
     Str $path,
     Str $data
