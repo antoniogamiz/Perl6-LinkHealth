@@ -20,12 +20,12 @@ sub compare(@previous, @current) is export {
     my @new;
     for @current -> $link {
         if %hash{$link}:!exists {
-            @missing.append($link);
+            @new.append($link);
         } else {
             %hash{$link} = True;
         }
     }
-    for %hash.keys {@new.append($_) if !%hash{$_}};
+    for %hash.keys {@missing.append($_) if !%hash{$_}};
     (@missing, @new);
 }
 
