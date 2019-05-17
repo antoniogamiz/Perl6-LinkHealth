@@ -2,9 +2,9 @@ use v6;
 
 use Perl6::LinkHealth;
 
-sub MAIN($previous, $save-to) {
+sub MAIN($doc-dir, $previous, $save-to) {
     say "Getting links from ./doc/doc";
-    my @links = list-directory("./doc/doc");
+    my @links = list-directory($doc-dir);
 
     say "Reading previous links from " ~ $previous;
     my @previous-links = read-from-file($previous);
