@@ -7,7 +7,7 @@ sub list-directory($dir = '.') is export {
     my @todo = $dir.IO;
     while @todo {
         for @todo.pop.dir -> $path {
-            @files.push($path) if !$path.d;
+            @files.push($path.Str.split($dir)[1]) if !$path.d;
             @todo.push($path) if $path.d;
         }
     }
@@ -25,8 +25,8 @@ sub compare(@previous, @current) is export {
             %hash{$link} = True;
         }
     }
-    for %hash.keys {@missing.append($_) if !%hash{$_}};
-    (@missing, @new);
+    for %hash.keys {@missing.append($_) if (!%hash{$_} and $_)};
+    (@missing.sort, @new.sort);
 }
 
 sub read-from-file($path) is export {
