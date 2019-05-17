@@ -6,7 +6,7 @@ Perl6::LinkHealth - Check that all links are generated using a previous file con
 
 # SYNOPSIS
 
-```
+```perl6
 
 use Perl6::LinkHealth;
 
