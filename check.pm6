@@ -7,7 +7,7 @@ sub MAIN($doc-dir, $previous, $save-to) {
     my @links = list-directory($doc-dir);
 
     say "Reading previous links from " ~ $previous;
-    my @previous-links = read-from-file($previous);
+    my @previous-links = read-from-file($previous) if $previous.IO.e;
     
     say "Comparing links...";
     my @result = compare(@previous-links, @links);
