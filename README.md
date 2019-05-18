@@ -1,4 +1,4 @@
-![![Build Status](https://travis-ci.com/antoniogamiz/Perl6-LinkHealth.svg?branch=master)](https://travis-ci.com/antoniogamiz/Perl6-LinkHealth)
+[![Build Status](https://travis-ci.com/antoniogamiz/Perl6-LinkHealth.svg?branch=master)](https://travis-ci.com/antoniogamiz/Perl6-LinkHealth)
 
 # NAME
 
