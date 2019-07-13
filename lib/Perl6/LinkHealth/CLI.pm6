@@ -31,6 +31,7 @@ package Perl6::LinkHealth::CLI {
         # save-to-file($save-to, @links.join: "\n");
 
         pretty-print(@result[0].elems ~ " missing and " ~ @result[1].elems ~ " new.");
+        if (@result[0].elems > 0) {exit 1;}
     }
 }  
 
