@@ -7,4 +7,4 @@ use Perl6::LinkHealth;
 
 my $expected = "/a.txt /b/b.txt";
 
-is list-directory("assets/testing-dirs"), $expected, "Basic dir list";
+is list-directory("t/testing-dirs"), $expected, "Basic dir list";
