@@ -14,7 +14,8 @@
     "Test::META"
   ],
   "provides": {
-    "Perl6::LinkHealth": "lib/Perl6/LinkHealth.pm6"
+    "Perl6::LinkHealth": "lib/Perl6/LinkHealth.pm6",
+    "Perl6::LinkHealth::CLI": "lib/Perl6/CLI.pm6"
   },
   "resources": [
     "previous-links.txt"
