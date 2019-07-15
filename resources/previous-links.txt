@@ -11,6 +11,8 @@ routine/mro.html
 routine/of.html
 routine/root.html
 routine/any.html
+routine/exit.html
+type/independent-routines.html
 type/Cool.html
 type/Hash.html
 type/int.html
@@ -20,8 +22,6 @@ type/X::IO.html
 type/Any.html
 type/Associative.html
 type/Cancellation.html
-programs/01-debugging.html
-programs/02-reading-docs.html
 syntax/anon.html
 syntax/new reference.html
 syntax/INTRODUCTION.html
