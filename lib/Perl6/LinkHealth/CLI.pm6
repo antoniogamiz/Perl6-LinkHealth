@@ -37,7 +37,7 @@ package Perl6::LinkHealth::CLI {
     multi MAIN (
         'write',
         :$html-dir!,
-        :$to          #=
+        :$to          #= File where the links will be written
     ) {
         say "Getting links from $html-dir";
         my @links;
