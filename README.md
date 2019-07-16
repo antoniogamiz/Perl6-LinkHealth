@@ -4,6 +4,16 @@
 
 Perl6::LinkHealth - Check that all links are generated using a previous file containing the links.
 
+## Usage
+
+```
+# check links with the default doc set
+linkhealth --html-dir=test-doc
+
+# write a new link file
+linkhealth --html-dir=doc --to=links.txt
+```
+
 # SYNOPSIS
 
 ```perl6
