@@ -10,7 +10,7 @@ package Perl6::LinkHealth::CLI {
 
     proto MAIN(|) is export { * }
 
-    #| Start the documentation generation with the specified options
+    #| Compare the current links with the given links file
     multi MAIN (
         :$html-dir!,                                            #= Directory containing the HTML files
         :previous-links($pl) = %?RESOURCES<previous-links.txt>, #= File containing the links to compare
