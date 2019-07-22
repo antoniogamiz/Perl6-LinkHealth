@@ -1,4 +1,3 @@
-use v6;
 use Perl6::LinkHealth;
 
 package Perl6::LinkHealth::CLI {
@@ -27,16 +26,16 @@ package Perl6::LinkHealth::CLI {
         say "Comparing links...";
         my @result = compare(@previous-links, @links);
         
-        if(@result[0]) {
+        if (@result[0]) {
             pretty-print(@result[0].elems ~ "missing:");
             @result[0].map({.say});
         }
-        if(@result[1]) {
+        if (@result[1]) {
             pretty-print(@result[1].elems ~ "new:");
             @result[1].map({.say});
         }
 
-pretty-print(@result[0].elems ~ " missing and " ~ @result[1].elems ~ " new.");
+        pretty-print(@result[0].elems ~ " missing and " ~ @result[1].elems ~ " new.");
         if (@result[0].elems > 0) {exit 1;}
     }
 
