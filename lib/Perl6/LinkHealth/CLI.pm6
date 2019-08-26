@@ -16,7 +16,7 @@ package Perl6::LinkHealth::CLI {
     ) {
         say "Getting links from ./doc/doc";
         my @links;
-        for <programs language routine type programs syntax> -> $d {
+        for <programs language routine type syntax> -> $d {
             @links.append: list-directory($html-dir ~ "/$d").map({$d~$_}).Slip;
         }
 
