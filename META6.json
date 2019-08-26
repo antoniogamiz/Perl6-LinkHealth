@@ -1,7 +1,7 @@
 {
   "perl": "6.*",
   "name": "Perl6::LinkHealth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "auth": "github:antoniogamiz",
   "license": "Artistic-2.0",
   "description": "Module to check the links in the Perl6 doc",
