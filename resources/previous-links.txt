@@ -12,7 +12,7 @@ routine/of.html
 routine/root.html
 routine/any.html
 routine/exit.html
-type/independent-routines.html
+language/independent-routines.html
 type/Cool.html
 type/Hash.html
 type/int.html
@@ -26,3 +26,6 @@ syntax/anon.html
 syntax/new reference.html
 syntax/INTRODUCTION.html
 syntax/p6doc.html
+routine/( ).html
+type/pod1.html
+type/pod2.html
